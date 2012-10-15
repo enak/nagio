@@ -43,6 +43,8 @@
                         <li><a href="nagged/">Getting nagged?</a></li>
                         <li><a href="http://www.hackru.org/">HackRU</a></li>
                         <li><a href="https://www.hackerleague.org/hackathons/hackru-fall-2012">HackerLeague</a></li>
+			<li><a href="http://www.twilio.com/">Twilio</a></li>
+			<li><a href="http://sendgrid.com/">SendGrid</a></li>
                         </ul>
                     </div><!--/.nav-collapse -->
                 </div>
@@ -51,10 +53,10 @@
 
         <div class="container">
         	<?php
-        			require './SendGridIO.php';
-        			require './sendSMS.php';
 				if(isset($_POST['register']))
 				{
+					require './SendGridIO.php';
+        				require './sendSMS.php';
 					$con = mysql_connect('stevekaneus.ipagemysql.com', 'nagio', 'nagio_hackRU2012'); 
 					if (!$con) { 
 						die('Could not connect: ' . mysql_error()); 
