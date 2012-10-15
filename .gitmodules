@@ -1,3 +1,6 @@
 [submodule "twilio-php"]
 	path = twilio-php
 	url = git://github.com/twilio/twilio-php.git
+[submodule "sendgrid-php"]
+	path = sendgrid-php
+	url = git://github.com/sendgrid/sendgrid-php.git
